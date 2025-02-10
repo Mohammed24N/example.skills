@@ -28,17 +28,24 @@
     </footer>
 
     <!-- Fetch Navigation Bar Dynamically -->
-    <script>
-        fetch("nav.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading nav:", error));
+    function performSearch() {
+            let query = document.getElementById("searchInput").value.toLowerCase().trim(); // Get input, convert to lowercase, remove spaces
 
-        function performSearch() {
-            let query = document.getElementById("searchInput").value;
-            alert("Searching for: " + query); // Placeholder search functionality
+            // Define page links based on search terms
+            let pages = {
+                "overview": "overview.html",
+                "game data": "game-data.html",
+                "system files": "system-files.html",
+                "ps3 lab sheets": "PS3-Lab-Sheets.html",
+                "artifacts found on a ps3": "Artifacts-found-on-a-PS3.html"
+            };
+
+            // If input matches a page, navigate to that page
+            if (pages[query]) {
+                window.location.href = pages[query]; // Redirect to the correct page
+            } else {
+                alert("Page not found. Please search for: Overview, Game Data, System Files, PS3 Lab Sheets, or Artifacts.");
+            }
         }
     </script>
 </body>
