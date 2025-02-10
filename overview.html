@@ -27,7 +27,15 @@
         <p>Forensic analysis by Mohammed Neda | Data extracted from Sony PS3 | 2024</p>
     </footer>
 
-    <!-- Fetch Navigation Bar Dynamically -->
+    <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading nav:", error));
+
+    
     function performSearch() {
             let query = document.getElementById("searchInput").value.toLowerCase().trim(); // Get input, convert to lowercase, remove spaces
 
