@@ -22,16 +22,16 @@
     </footer>
 
     <script>
-        fetch("nav.html")
+       fetch("nav.html")
     .then(response => response.text())
     .then(data => {
         document.getElementById("navbar").innerHTML = data;
-        let scripts = document.getElementById("navbar").getElementsByTagName("script");
-        for (let script of scripts) {
-            eval(script.innerText); // Re-run script inside nav.html
-        }
+        
+        // Manually attach the event listener after nav.html loads
+        document.querySelector(".search-bar button").addEventListener("click", searchFunction);
     })
     .catch(error => console.error("Error loading nav:", error));
+
 
     </script>
 </body>
