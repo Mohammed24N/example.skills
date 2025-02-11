@@ -23,11 +23,16 @@
 
     <script>
         fetch("nav.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading nav:", error));
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+        let scripts = document.getElementById("navbar").getElementsByTagName("script");
+        for (let script of scripts) {
+            eval(script.innerText); // Re-run script inside nav.html
+        }
+    })
+    .catch(error => console.error("Error loading nav:", error));
+
     </script>
 </body>
 </html>
