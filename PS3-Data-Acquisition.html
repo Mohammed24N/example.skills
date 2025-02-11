@@ -9,24 +9,30 @@
 <body>
     <header>
         <h1>Artifacts Found on a Sony PlayStation 3 Console</h1>
-        <nav>
-            <ul>
-                <li><a href="overview.html">Overview</a></li>
-                <li><a href="game-data.html">Game Data</a></li>
-                <li><a href="system-files.html">System Files</a></li>
-                <li><a href="PS3-Lab-Sheets.html">PS3 Lab Sheets</a></li>
-                <li><a href="Artifacts-found-on-a-PS3">Artifacts found on a PS3</a></li>
-            </ul>
-        </nav>
+        <div id="navbar"></div>
     </header>
 
-    <section id="PS3-Lab-Sheets">
-      <h2>Lab Sheets for the PS3</h2>
-      <p>Below are Lab sheets for you to if you want to practice your Forensic Analysis skills by using the tool FTKImager.</p>
+    <section id="ps3-data-acquisition">
+      <h2>How to perform a Data Acquisition from a Sony PlayStation 3 console</h2>
+      <p>This section of the website will be dedicated to explaining in detail how to perform a ps3 data acquisition with the internal hard drive located inside the console.</p>
     </section>
 
         <footer>
         <p>Forensic analysis by [Mohammed Neda] | Data extracted from Sony PS3 | 2024</p>
     </footer>
+
+    <script>
+        fetch("nav.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+        let scripts = document.getElementById("navbar").getElementsByTagName("script");
+        for (let script of scripts) {
+            eval(script.innerText); // Re-run script inside nav.html
+        }
+    })
+    .catch(error => console.error("Error loading nav:", error));
+
+    </script>
 </body>
 </html>
