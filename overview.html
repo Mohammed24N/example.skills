@@ -3,71 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overview - PS3 Console Artifacts</title>
+    <title>PS3 Console Artifacts</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
         <h1>Artifacts Found on a Sony PlayStation 3 Console</h1>
-        <div id="navbar"></div> <!-- Navbar loads dynamically -->
+        <div id="navbar"></div>
     </header>
 
-    <div id="searchResults"></div>
-
     <section id="overview">
-        <h2>Overview of the PS3</h2>
-        <p>When analyzing a Sony PlayStation 3 (PS3) for forensic purposes, numerous artifacts can be found, each offering insights into the usage of the console. These artifacts may be useful for data recovery, gaming activity analysis, or investigating user behavior.</p>
+      <h2>Overview of the website and its purposes</h2>
+      <p>Welcome to the website "Artifacts found on a Sony PlayStation 3 Console. This site will be dedicated to exploring the various artifacts and other forms of data that can be found within a Sony Playstation 3 console.</p>
     </section>
 
-    <footer>
-        <p>Forensic analysis by Mohammed Neda | Data extracted from Sony PS3 | 2024</p>
+        <footer>
+        <p>Forensic analysis by [Mohammed Neda] | Data extracted from Sony PS3 | 2024</p>
     </footer>
 
     <script>
         fetch("nav.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading nav:", error));
-
-        const pagesToSearch = [
-            "overview.html",
-            "game-data.html",
-            "system-files.html",
-            "PS3-Lab-Sheets.html",
-            "Artifacts-found-on-a-PS3.html"
-        ];
-
-        function searchContent() {
-            let query = document.getElementById("topSearchInput").value.toLowerCase().trim();
-            let resultsDiv = document.getElementById("searchResults");
-            resultsDiv.innerHTML = ""; // Clear previous results
-
-            if (query === "") {
-                resultsDiv.innerHTML = "<p>Please enter a search term.</p>";
-                return;
-            }
-
-            let searchPromises = pagesToSearch.map(page => 
-                fetch(page)
-                    .then(response => response.text())
-                    .then(content => {
-                        if (content.toLowerCase().includes(query)) {
-                            let resultItem = document.createElement("p");
-                            resultItem.innerHTML = `🔍 Found in <a href="${page}">${page}</a>`;
-                            resultsDiv.appendChild(resultItem);
-                        }
-                    })
-                    .catch(error => console.error("Error fetching:", page, error))
-            );
-
-            Promise.all(searchPromises).then(() => {
-                if (resultsDiv.innerHTML === "") {
-                    resultsDiv.innerHTML = "<p>No matches found.</p>";
-                }
-            });
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+        let scripts = document.getElementById("navbar").getElementsByTagName("script");
+        for (let script of scripts) {
+            eval(script.innerText); // Re-run script inside nav.html
         }
+    })
+    .catch(error => console.error("Error loading nav:", error));
+
     </script>
 </body>
 </html>
