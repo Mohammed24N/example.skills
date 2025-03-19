@@ -13,12 +13,12 @@
     </header>
 
     <section id="overview">
-        <h2>Overview of Artifacts on PS3</h2>
-        <p>When analyzing a Sony PlayStation 3 (PS3) for forensic purposes, numerous artifacts can be found, each offering insights into the usage of the console. These artifacts may be useful for data recovery, gaming activity analysis, or investigating user behavior.</p>
+        <h2>Welcome to the Website.</h2>
+        <p>Welcome to the website "Artifacts Found on a Sony PlayStation 3 Console. This website will go over the possible artifacts that can be pulled from a Playstation 3, including the history behind the console and other forms of data that can be pulled from the console.</p>
     </section>
 
     <footer>
-        <p>Forensic analysis by Mohammed Neda | Data extracted from Sony PS3 | 2024</p>
+    <p>Forensic analysis by Mohammed Neda | Data extracted from Sony PS3 | 2025</p>
     </footer>
 
     <script>
