@@ -122,7 +122,7 @@ footer {
     }
 
     .hard-drive-image {
-        width: 80%; /* Adjust the image width on smaller screens */
+        width: 20%; /* Adjust the image width on smaller screens */
         margin-bottom: 20px; /* Add some space below the image */
     }
 }
