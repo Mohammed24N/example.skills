@@ -14,7 +14,7 @@
 
     <section id="overview">
         <h2>Welcome to the Website.</h2>
-        <p>Welcome to the website "Artifacts Found on a Sony PlayStation 3 Console. This website will go over the possible artifacts that can be pulled from a Playstation 3, including the history behind the console and other forms of data that can be pulled from the console.</p>
+        <p>Welcome to the website "The Challenges of PS3 Digital Forensics". This website will go over the challenges that revolve around decrypting a PS3 Hard Drive. The Website will go over techniques attempted in order to decrypt the Hard Drive, the PS3 Hard Drive structure and the challenges and findings that were found upon research.</p>
     </section>
 
     <footer>
