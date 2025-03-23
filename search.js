@@ -4,7 +4,7 @@ function searchFunction() {
 
     let pages = {
         "overview": "overview.html",
-        "game data": "game-data.html",
+        "game data": "PS3-Hard-Drive-Structure.html",
         "system files": "system-files.html",
         "ps3 data acquisition": "PS3-Data-Acquisition.html",
         "artifacts found on a ps3": "Artifacts-found-on-a-PS3.html"
