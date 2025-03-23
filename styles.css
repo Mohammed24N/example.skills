@@ -113,6 +113,7 @@ footer {
     position: fixed;
     width: 90%;
     bottom: 0;
+    border-radius: 50px;
 }
 
 /* Responsive styling for smaller screens */
