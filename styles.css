@@ -81,48 +81,8 @@ code {
 
 /* Heading and text container styling */
 .heading-text {
-    flex: 1; /* Allows the text to take up the remaining space */
-}
+    flex: 1; /* Allows the text to take up the*
 
-/* Heading styling */
-.heading-text h3 {
-    margin: 0 0 10px; /* Add margin at the bottom */
-    font-size: 1.5em; /* Adjust the heading size */
-    color: white; /* Ensure text is white */
-}
 
-/* List styling */
-.heading-text ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-.heading-text li {
-    margin-bottom: 8px;
-    color: white; /* Ensure text is white */
-}
-
-/* Footer styling */
-footer {
-    background-color: #FFFFFF;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Responsive styling for smaller screens */
-@media screen and (max-width: 768px) {
-    .image-heading-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        text-align: center; /* Center the text for better alignment */
-    }
-
-    .hard-drive-image {
-        width: 80%; /* Adjust the image width on smaller screens */
-        margin-bottom: 20px; /* Add some space below the image */
-    }
-}
 
