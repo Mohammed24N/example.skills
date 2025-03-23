@@ -74,7 +74,7 @@ code {
 }
 
 /* Image styling */
-.hard-drive-image {
+.Hard-Drive-Image {
     width: 20%; /* Adjust this to make the image larger or smaller */
     margin-right: 20px; /* Space between the image and text */
     max-width: 100%; /* Ensure the image doesn't overflow */
