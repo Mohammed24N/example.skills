@@ -108,9 +108,9 @@ code {
 footer {
     background-color: #FFFFFF;
     color: black;
-    text-align: relative;
+    text-align: fixed;
     padding: 10px;
-    position: fixed;
+    position: relative;
     width: 90%;
     left: 5%
     bottom: 0;
