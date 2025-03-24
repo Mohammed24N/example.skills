@@ -133,6 +133,12 @@ footer {
         margin-bottom: 20px; /* Add some space below the image */
     }
 }
+footer {
+    text-align: center; /* Centers the text */
+    width: 100%; /* Ensures it spans the full width */
+    margin-top: 20px; /* Adds some space above the footer */
+    padding: 10px 0; /* Adds padding for better spacing */
+}
 
 
 
