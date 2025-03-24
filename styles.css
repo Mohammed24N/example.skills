@@ -132,69 +132,46 @@ footer {
         width: 80%; /* Adjust the image width on smaller screens */
         margin-bottom: 20px; /* Add some space below the image */
     }
+/* Flexbox container for side-by-side layout */
+.content-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Spreads elements */
+    gap: 20px; /* Adds spacing between elements */
 }
-footer {
-    text-align: center; /* Centers the text */
-    width: 100%; /* Ensures it spans the full width */
-    margin-top: 20px; /* Adds some space above the footer */
-    padding: 10px 0; /* Adds padding for better spacing */
+
+/* Steps text styling */
+.steps {
+    flex: 1; /* Allows it to take available space */
+    max-width: 50%; /* Limits width */
 }
-/* Slideshow container */
+
+/* Slideshow styling */
 .slideshow-container {
-    position: relative;
-    max-width: 90%;
-    margin: auto;
-    border-radius: 20px; /* Rounded corners */
+    flex: 1;
+    max-width: 45%; /* Limits width of slideshow */
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Soft white glow */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-/* Hide all slides by default */
-.slide {
-    display: none;
-}
-
-/* Make sure images fit */
+/* Adjust images inside slideshow */
 .slide img {
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
 
-/* Fade animation */
-.fade {
-    animation: fadeEffect 1.5s ease-in-out;
-}
-
-@keyframes fadeEffect {
-    from { opacity: 0.4; }
-    to { opacity: 1; }
-}
-
-/* Optional: Navigation dots for manual control */
-.dots {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.dot {
-    height: 12px;
-    width: 12px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-.active {
-    background-color: white;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .slideshow-container {
-        max-width: 100%;
+    .content-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text */
+    }
+
+    .steps, .slideshow-container {
+        max-width: 100%; /* Make both full width */
     }
 }
 
