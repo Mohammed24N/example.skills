@@ -1,86 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PS3 Console Artifacts</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-</head>
-<body>
-    <header>
-        <h1>The Challenges of PS3 Digital Forensics</h1>
-        <div id="navbar"></div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Challenges of PS3 Digital Forensics</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    </head>
+    <body>
+        <header>
+            <h1>The Challenges of PS3 Digital Forensics</h1>
+            <div id="navbar"></div>
+        </header>
+    <h2>PS3-Data-Acquisition</h2>
+        <section id="PS3-Data-Acquisition">
+            <h2>How to perform a Data Acquisition from a Sony PlayStation 3 console</h2>
+            <p>This section of the website will be dedicated to explaining in detail how to perform a ps3 data acquisition with the internal hard drive located inside the console. The Acquisition will be performed by using the FTKImager tool</p>
+        </section>
 
-    <section id="ps3-data-acquisition">
-      <h2>How to perform a Data Acquisition from a Sony PlayStation 3 console</h2>
-      <p>This section of the website will be dedicated to explaining in detail how to perform a ps3 data acquisition with the internal hard drive located inside the console. The Acquisition will be performed by using the FTKImager tool</p>
-    </section>
+        <section id="PS3-Data-Acquisition">
+            <h2>Remove the PS3 Hard Drive</h2>
+            <p>1.Power off the PS3 completely and unplug all of the cables attached.</p>
+            <p>2.Remove the Hard Drive. This will depend on which PS3 model you are using to extract the data from the Hard Drive.</p>
+            <p>3.Insert the PS3 Hard Drive into a SATA-to-USB adapter or dock for external access.</p>
+        </section>
 
-    <section id="ps3-data-acquisition">
-        <h2>Remove the PS3 Hard Drive</h2>
-        <p>1. Power off the PS3 completely and unplug all of the cables attached</p>
-        <p>2. Remove the Hard Drive. This will depend on which PS3 model you are using to extarct data from the Hard Drive.</p>
-        <p>3. Insert the PS3 Hard Drive into a SATA-to-USB adapter or dock for external access.</p>
-    </section>
-
-    <section id="ps3-data-acquisition">
-        <h2>Connect the Hard Drive to a Workstation</h2>
-        <p>Use a writeblocker(This is to ensure that the data processed remains untampered with or modified)</p>
-        <p>Connect the PS3 Hard Drive to the workstation via a USB or SATA plug</p>
-        <p>Ensure that the drive can be recognized by Windows</p>
-    </section>
-
-    <section id="ps3-data-acquisition">
-        <div class="content-container">
-
-            <div class"steps">
-        <h2>Launch the FTKImager Application</h2>
-        <p>Open FTKImager on your computer</p>
-        <p>Click File > Create Disk Image</p>
-        <p>Select "Physical Drive" and locate the PS3 Hard Drive thats connected.</p>
-        <p>Click Next and select the appropriate image format, either EO1 or RAW format</p>
-    </div>
-             <section id="PS3-Hard-Drive-Image">
+        <section id="PS3-Data-Acquisition">
+            <h2>Connect the Hard Drive to a Workstation</h2>
+            <p>Use a writeblocker(This is to ensure that the data processed remains untampered with or modified)</p>
+            <p>Connect the PS3 Hard Drive to the workstation via a USB or SATA plug</p>
+            <p>Ensure that the drive can be recognized by Windows</p>
+        </section>
+        
+            
+    
+       <section id="PS3-Hard-Drive-Image">
           
         <div class="image-heading-container">
             <img src="picture1.png" alt="PS3 Hard Drive" class="hard-drive-image"
             style="width: 20%;">    
             <div class="heading-text">
-                <h3 style="margin-left: 1%;">Playstation 3 Hard Drive Specifications</h3>
+                <h3 style="margin-left: 1%;">Launch the FTKImager Application</h3>
                 <ul>
-                    <li style=" margin-left: 1%;">Storage Capacity: 80GB</li>
-                    <li style=" margin-left: 1%;">Interface: SATA II (3.0Gb/s)</li>
-                    <li style=" margin-left: 1%;">Form Factor: 2.5" (standard laptop size)</li>
-                    <li style=" margin-left: 1%;">Rotation Speed (Platters/Heads): 5400rpm</li>
-                    <li style=" margin-left: 1%;">Buffer: 8MB</li>
-                    <li style=" margin-left: 1%;">Operating Temperature: 55ºC</li>
+                    <li style=" margin-left: 1%;">Open FTKImager on your Computer/li>
                     
                 </ul>
             </div> 
         </div>
         </section>
             
-
-    
-
-        <footer>
+            
+            <script>
+                fetch("nav.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("navbar").innerHTML = data;
+                        // Manually attach the event listener after nav.html loads
+                        document.querySelector(".search-bar button").addEventListener("click", searchFunction);
+                    })
+                    .catch(error => console.error("Error loading nav:", error));
+            </script>
+            <script src="search.js"></script>
+            <footer>
         <p>Forensic analysis by [Mohammed Neda] | Data extracted from Sony PS3 | 2024</p>
-        </footer>
-
-    <script>
-        fetch("nav.html")
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("navbar").innerHTML = data;
-        
-        // Manually attach the event listener after nav.html loads
-        document.querySelector(".search-bar button").addEventListener("click", searchFunction);
-    })
-    .catch(error => console.error("Error loading nav:", error));
-
-    </script>
-
-    <script src="search.js"></script>
-</body>
+    </footer>
+    </body>
+    
 </html>
+
