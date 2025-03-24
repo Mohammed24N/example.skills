@@ -139,6 +139,65 @@ footer {
     margin-top: 20px; /* Adds some space above the footer */
     padding: 10px 0; /* Adds padding for better spacing */
 }
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Soft white glow */
+}
+
+/* Hide all slides by default */
+.slide {
+    display: none;
+}
+
+/* Make sure images fit */
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Optional: Navigation dots for manual control */
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.active {
+    background-color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .slideshow-container {
+        max-width: 100%;
+    }
+}
+
 
 
 
