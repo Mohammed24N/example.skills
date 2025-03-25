@@ -7,7 +7,7 @@ function searchFunction() {
         "PS3 Hard Drive Structure": "PS3-Hard-Drive-Structure.html",
         "system files": "system-files.html",
         "ps3 data acquisition": "PS3-Data-Acquisition.html",
-        "artifacts found on a ps3": "Artifacts-found-on-a-PS3.html"
+        "ps3 encryption": "PS3-Encryption.html"
     };
 
     if (pages[query]) {
