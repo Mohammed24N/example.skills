@@ -5,7 +5,7 @@ function searchFunction() {
     let pages = {
         "overview": "overview.html",
         "PS3 Hard Drive Structure": "PS3-Hard-Drive-Structure.html",
-        "system files": "system-files.html",
+        "data that can be found": "Data-that-can-be-found.html",
         "ps3 data acquisition": "PS3-Data-Acquisition.html",
         "ps3 encryption": "PS3-Encryption.html"
     };
