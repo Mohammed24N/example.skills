@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Challenges of PS3 Digital Forensics</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
     <header>
@@ -65,6 +65,36 @@
     </div>
 </section>
 
+    <section id="PS3-Hard-Drive-Image">
+        <div class="image-heading-container">
+            <h2> VSH (Virtual Shell) Artifacts</h2>
+            <img src="vsh.png" alt="PS3 Hard Drive" class="hard-drive-image" style="width: 75%;">
+            <ul>
+                <p>Location of VSH (Virtual Shell) artifacts: /vsh/</p>
+            </ul>
+        </div>
+    </section>
+
+    <section id="PS3-Hard-Drive-Image">
+        <div class="image-heading-container">
+            <h2> Crash Report Artifacts</h2>
+            <img src="crash report.png" alt="PS3 Hard Drive" class="hard-drive-image" style="width: 75%;">
+            <ul>
+                <p>Location of crash report artifacts: /crash_report/</p>
+            </ul>
+        </div>
+    </section>
+
+    <section id="PS3-Hard-Drive-Image">
+        <div class="image-heading-container">
+            <h2>Partition artifacts</h2>
+            <img src="number of partitions.png" alt="PS3 Hard Drive" class="hard-drive-image" style="width: 75%;">
+            <ul>
+                <p>There is no location for the partitions as these are where all the artifacts come from</p>
+            </ul>
+        </div>
+    </section>
+
         <footer>
         <p>Forensic analysis by [Mohammed Neda] | Data extracted from Sony PS3 | 2024</p>
     </footer>
@@ -75,7 +105,7 @@
     .then(data => {
         document.getElementById("navbar").innerHTML = data;
         
-        // Manually attach the event listener after nav.html loads
+        
         document.querySelector(".search-bar button").addEventListener("click", searchFunction);
     })
     .catch(error => console.error("Error loading nav:", error));
