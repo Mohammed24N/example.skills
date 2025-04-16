@@ -1,7 +1,7 @@
-/* General styling */
+
 body {
     font-family: Calibri, sans-serif;
-    background-color: #0000FF; /* Blue background */
+    background-color: #0000FF; 
     margin: 0;
     padding: 0;
 }
@@ -69,34 +69,34 @@ code {
     border-radius: 5px;
 }
 
-/* Flexbox container to display image and text side by side */
+
 .image-heading-container {
     display: flex;
-    flex-wrap: wrap; /* Allow content to wrap in case of small screens */
-    align-items: flex-start; /* Vertically align items to the top */
+    flex-wrap: wrap; 
+    align-items: flex-start; 
     margin: 20px;
 }
 
-/* Image styling */
+
 .Hard-Drive-Image {
-    width: 20%; /* Adjust this to make the image larger or smaller */
-    margin-right: 20px; /* Space between the image and text */
-    max-width: 100%; /* Ensure the image doesn't overflow */
+    width: 20%; 
+    margin-right: 20px; 
+    max-width: 100%; 
 }
 
-/* Heading and text container styling */
+
 .heading-text {
-    flex: 1; /* Allows the text to take up the remaining space */
+    flex: 1; 
 }
 
-/* Heading styling */
+
 .heading-text h3 {
-    margin: 0 0 10px; /* Add margin at the bottom */
-    font-size: 1.5em; /* Adjust the heading size */
-    color: white; /* Ensure text is white */
+    margin: 0 0 10px; 
+    font-size: 1.5em; 
+    color: white; 
 }
 
-/* List styling */
+
 .heading-text ul {
     list-style-type: none;
     padding: 0;
@@ -104,10 +104,10 @@ code {
 
 .heading-text li {
     margin-bottom: 2px;
-    color: white; /* Ensure text is white */
+    color: white; /
 }
 
-/* Footer styling */
+
 footer {
     background-color: #FFFFFF;
     color: black;
@@ -121,57 +121,57 @@ footer {
     
 }
 
-/* Responsive styling for smaller screens */
+
 @media screen and (max-width: 768px) {
     .image-heading-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        text-align: center; /* Center the text for better alignment */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .hard-drive-image {
-        width: 80%; /* Adjust the image width on smaller screens */
-        margin-bottom: 20px; /* Add some space below the image */
+        width: 80%; 
+        margin-bottom: 20px; 
     }
-/* Flexbox container for side-by-side layout */
+
 .content-container {
     display: flex;
-    flex-wrap: wrap; /* Allows stacking on smaller screens */
-    align-items: center; /* Aligns items vertically */
-    justify-content: space-between; /* Spreads elements */
-    gap: 20px; /* Adds spacing between elements */
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
 }
 
-/* Steps text styling */
+
 .steps {
-    flex: 1; /* Allows it to take available space */
-    max-width: 50%; /* Limits width */
+    flex: 1; 
+    max-width: 50%; 
 }
 
-/* Slideshow styling */
+
 .slideshow-container {
     flex: 1;
-    max-width: 45%; /* Limits width of slideshow */
+    max-width: 45%; 
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-/* Adjust images inside slideshow */
+
 .slide img {
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 768px) {
     .content-container {
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center text */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .steps, .slideshow-container {
-        max-width: 100%; /* Make both full width */
+        max-width: 100%; 
     }
 }
 
