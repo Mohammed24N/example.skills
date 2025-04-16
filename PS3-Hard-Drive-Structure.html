@@ -49,7 +49,7 @@
                     .then(response => response.text())
                     .then(data => {
                         document.getElementById("navbar").innerHTML = data;
-                        // Manually attach the event listener after nav.html loads
+                        
                         document.querySelector(".search-bar button").addEventListener("click", searchFunction);
                     })
                     .catch(error => console.error("Error loading nav:", error));
