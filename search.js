@@ -1,6 +1,6 @@
 function searchFunction() {
     let query = document.getElementById("search").value.toLowerCase().trim();
-    console.log(query);  // Debugging: Check if the function runs and captures input
+    console.log(query);  
 
     let pages = {
         "overview": "overview.html",
